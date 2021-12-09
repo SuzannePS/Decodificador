@@ -1,12 +1,12 @@
 function base64(){
     var mensagem = document.querySelector("#mensagem").value 
+    var resultado =  document.querySelector("#resultado").valeu
     if(document.querySelector("#cod1").checked){
-        event.preventDefault()
-        var resposta = btoa(mensagem)
-        document.querySelector("#resultado").innerHTML= resposta
+       
+            var resposta = btoa(mensagem)
+            resultado.value=resposta.value  
     }else if(document.querySelector("#cod2").checked) {
-        event.preventDefault()
-        var resposta = atob(mensagem)
-        document.querySelector("#resultado").innerHTML= resposta
+            var resposta = atob(mensagem)
+            resultado.value=resposta.value 
     }
 } 
