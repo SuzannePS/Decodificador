@@ -1,4 +1,4 @@
- function validaRotacao(){
+function validaRotacao(){
     var passo = document.querySelector("#passo").value;
      passo%= 26;
     var radioDecodificar = document.querySelector("#cod2");
@@ -13,7 +13,7 @@ function cesar(passo) {
     var mensagemInicial = document.querySelector("#mensagem").value;
     var resultadoCript = document.querySelector("#resultado");
     var troca = "";
-    textoDeSaida.innerHTML = "";
+    resultadoCript.innerHTML = "";
 
     for (var i = 0; i < mensagemInicial.length; i++) {
         troca = mensagemInicial.charCodeAt(i);
@@ -38,6 +38,6 @@ function cesar(passo) {
             }
         }
 
-        document.querySelector("#resultado").innerHTML += String.fromCharCode(troca);
+        resultadoCript.innerHTML += String.fromCharCode(troca);
     }
 }

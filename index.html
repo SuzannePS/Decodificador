@@ -17,7 +17,7 @@
         <h1>Base 64 & Cifra de Cezar</h1> </header>
     <main>
         <div class= "caixa">
-            <form>
+            <div class="container">
                 <label for="titulo" class= "escolha">Escolha seu decodificador</label>
                 <select id= "opcoes">
                     <option value="" disabled selected>Selecione</option>
@@ -38,14 +38,14 @@
                 </div>
 
                 <label for="mensagem">MensagemCod</label>
-                <input name="mensagem" type= "text" id="mensagem">
+                <input type="text" id="mensagem">
 
                 <label for="resultado">ResultadoMsg</label>
-                <input name="resultado"  id="resultado" readonly>
+                <textarea id="resultado"></textarea>
 
-                <button  class="resultado">Executar</button>
+                <button class="btnResultado" onclick="btn()">Executar</button>
 
-            </form>
+            </div>
         </div>  
     </main>
 

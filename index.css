@@ -50,6 +50,12 @@ main{
     justify-content: center;
 }
 
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 form input, label{
     display: block;
     border: none;
@@ -69,6 +75,7 @@ margin: 10px;
 
 
 .resultado{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     }
